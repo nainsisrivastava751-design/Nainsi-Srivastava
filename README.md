@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nainsi Srivastava | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f5fa;
+            color: #252542;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #252542;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #a9a2ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #a9a2ff;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        .home {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .home-content {
+            flex: 1;
+            min-width: 270px;
+        }
+
+        .home-content h1 {
+            font-size: 45px;
+            color: #6257d9;
+        }
+
+        .home-content h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .home-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: #6257d9;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 65px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #6257d9;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #4439b0;
+        }
+
+        h2.title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #6257d9;
+        }
+
+        .about p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #6257d9;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills span {
+            background: white;
+            padding: 12px 22px;
+            border-radius: 7px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: #252542;
+            color: white;
+        }
+
+        .contact h2 {
+            color: #a9a2ff;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #a9a2ff;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #17172e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .home-content h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Nainsi.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h2>Hello, I'm</h2>
+            <h1>Nainsi Srivastava</h1>
+            <h2>MCA Student</h2>
+
+            <p>
+                I am a Computer Applications student passionate
+                about technology, programming and problem-solving.
+                I am continuously learning new skills and preparing
+                myself for opportunities in the IT industry.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="profile">
+            NS
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2 class="title">About Me</h2>
+
+        <p>
+            My name is Nainsi Srivastava. I am currently pursuing
+            Master of Computer Applications (MCA).
+            I have an academic background in Mathematics,
+            Physics and Chemistry. I have knowledge of Java,
+            Python, SQL, HTML and CSS. I enjoy learning new
+            technologies and improving my technical skills.
+            My goal is to build a successful career in the
+            IT industry.
+        </p>
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+
+        <h2 class="title">My Education</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Master of Computer Applications</h3>
+                <p>MCA</p>
+                <p>Currently Pursuing</p>
+                <p>MMYRV, Ayodhya</p>
+            </div>
+
+            <div class="card">
+                <h3>Bachelor of Science</h3>
+                <p>B.Sc (PCM)</p>
+                <p>Completed</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>CBSE Board</p>
+                <p>87%</p>
+            </div>
+
+            <div class="card">
+                <h3>High School</h3>
+                <p>CBSE Board</p>
+                <p>86.3%</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2 class="title">My Technical Skills</h2>
+
+        <div class="skills">
+            <span>Java</span>
+            <span>Python (Basic)</span>
+            <span>SQL</span>
+            <span>DBMS</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>OOP Concepts</span>
+            <span>Java Collections</span>
+            <span>Operating System</span>
+            <span>Computer Networks</span>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2 class="title">My Projects</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A personal website developed using HTML
+                    and CSS to showcase my profile,
+                    education and technical skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>SQL Practice Project</h3>
+                <p>
+                    Practising database queries using SQL,
+                    including SELECT, WHERE, JOIN,
+                    GROUP BY and ORDER BY.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <p>Email:
+            <a href="mailto:your.email@example.com">
+                your.email@example.com
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href="https://www.linkedin.com/">
+                My LinkedIn Profile
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/">
+                My GitHub Profile
+            </a>
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Nainsi Srivastava | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
